@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamim's Bank</title>
+    <!-- tailwindcss cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-orange-300	">
+    <!-- header section start -->
+    <header>
+        <h1 class="text-center text-4xl mt-28 mb-8">Welcome To <span class="font-semibold text-sky-600">Tamim's Bank</span></h1>
+    </header>
+    <!-- header section end  -->
+
+    <!-- main section start -->
+    <main class="w-1/4 m-auto">
+        <div class="bg-white m-auto shadow-lg hover:shadow-2xl py-5 rounded-md">
+            <!-- log in header  -->
+            <h3 class="text-2xl mb-2 text-center text-sky-600 font-semibold">Please log in</h3>
+            <!-- login email field  -->
+            <input class="text-lg border-2 border-sky-600 rounded-md p-1 focus:outline-none focus:border-red-600 block m-auto mt-3 w-3/4" id="email-field" type="email" placeholder="Use email: tamim@bank.com">
+            <!-- login passwoord field  -->
+            <input class="text-lg border-2 border-sky-600 rounded-md p-1 focus:outline-none focus:border-red-600 block m-auto mt-3 w-3/4" id="password-field" type="password" placeholder="Use password: secret">
+            <!-- login button field  -->
+            <button id="login-btn" class="bg-sky-700 text-white block mx-auto mt-3 px-8 py-2 rounded-full font-semibold hover:bg-red-500 duration-300">Log In</button>
+        </div>
+    </main>
+    <!-- main section end -->
+
+    <!-- js file link  -->
+    <script src="js/login.js"></script>
+</body>
+</html>
