@@ -20,3 +20,22 @@ document.getElementById('deposite-btn').addEventListener('click', function(){
 })
 
 //withdraw money after clicking submit withdraw button
+document.getElementById('withdraw-btn').addEventListener('click', function(){
+    //get withdraw input money
+    const withdrawInput = document.getElementById('withdraw-input');
+    //get withdraw total money
+    const withdrawCurrent = document.getElementById('withdraw-total');
+    //conver string to number
+    const withdrawAmout = parseFloat(withdrawInput.value);
+    const withdrawTotal = parseFloat(withdrawCurrent.innerText);
+    // add input money to withdraw
+    const withdrawMoney = withdrawTotal + withdrawAmout;
+    withdrawCurrent.innerText = withdrawMoney;
+    //minus withdraw money from balance
+    const balanceCurrent = document.getElementById('balance-total');
+    const balanceTotal = parseFloat(balanceCurrent.innerText);
+    const balanceMinusWithdraw = balanceTotal - withdrawAmout;
+    balanceCurrent.innerText = balanceMinusWithdraw;
+    //clear withdraw input
+    withdrawInput.value ='';
+})
