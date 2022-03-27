@@ -15,22 +15,22 @@
     </header>
     <!-- header section end  -->
     <!-- main section start  -->
-    <main class="w-3/4 m-auto text-white">
+    <main class="lg:w-3/4 md:w-full m-auto text-white">
         <!-- money categories section start  -->
         <section>
-            <div class="grid grid-cols-3 gap-4">
+            <div class="grid md:grid-cols-3  gap-4">
                 <!-- deposite money  -->
-                <div class="bg-green-500 w-4/5 mx-auto p-3 rounded-md">
+                <div class="bg-green-500 lg:w-4/5 w-11/12 mx-auto p-3 rounded-md">
                     <h3 class="text-3xl">Deposite</h3>
                     <h4 class="text-4xl font-semibold mt-1">$<span id="deposite-total">00</span></h4>
                 </div>
                 <!-- withdraw money  -->
-                <div class="bg-red-500 w-4/5 mx-auto p-3 rounded-md">
+                <div class="bg-red-500 lg:w-4/5 w-11/12 mx-auto p-3 rounded-md">
                     <h3 class="text-3xl">Withdraw</h3>
                     <h4 class="text-4xl font-semibold mt-1">$<span id="withdraw-total">00</span></h4>
                 </div>
                 <!-- balance money  -->
-                <div class="bg-indigo-500 w-4/5 mx-auto p-3 rounded-md">
+                <div class="bg-indigo-500 lg:w-4/5 w-11/12 mx-auto p-3 rounded-md">
                     <h3 class="text-3xl">Balance</h3>
                     <h4 class="text-4xl font-semibold mt-1">$<span id="balance-total">1150</span></h4>
                 </div>
@@ -39,19 +39,19 @@
         <!-- money categories section end  -->
 
         <!-- money deposite and withdraw input section start  -->
-        <section class="mt-20 text-black">
-            <div class="grid grid-cols-2 gap-4">
+        <section class="mt-20 text-black pb-5">
+            <div class="grid md:grid-cols-2 gap-4">
                 <!-- deposite input -->
                 <div class="bg-green-300 p-4 rounded-md w-3/4 m-auto">
                     <h3 class="text-2xl font-semibold text-center">Please deposite money</h3>
                     <input id="deposite-input" class="text-lg border-2 border-sky-600 rounded-md p-1 focus:outline-none focus:border-red-600 block mt-3 w-full" type="text" placeholder="$ amount you want to deposite">
-                    <button id="deposite-btn" class="bg-sky-700 text-white block mx-auto mt-3 px-8 py-2 rounded-full font-semibold hover:bg-red-500 duration-300">Submit Deposite</button>
+                    <button id="deposite-btn" class="bg-sky-700 text-white block mx-auto mt-3 px-6 py-2 rounded-full font-semibold hover:bg-red-500 duration-300">Submit Deposite</button>
                 </div>
                 <!-- withdraw input -->
                 <div class="bg-red-300 p-4 rounded-md w-3/4 m-auto">
                     <h3 class="text-2xl font-semibold text-center">Please withdraw money</h3>
                     <input id="withdraw-input" class="text-lg border-2 border-sky-600 rounded-md p-1 focus:outline-none focus:border-red-600 block mt-3 w-full" type="text" placeholder="$ amount you want to withdraw">
-                    <button id="withdraw-btn" class="bg-sky-700 text-white block mx-auto mt-3 px-8 py-2 rounded-full font-semibold hover:bg-red-500 duration-300">Submit Withdraw</button>
+                    <button id="withdraw-btn" class="bg-sky-700 text-white block mx-auto mt-3 px-6 py-2 rounded-full font-semibold hover:bg-red-500 duration-300">Submit Withdraw</button>
                 </div>
             </div>
         </section>
